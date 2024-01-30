@@ -1,0 +1,51 @@
+#header {
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+}
+
+.position--inputSearch {
+    position: absolute;
+    bottom: -310%;
+    top: 150%;
+}
+
+.position--inputSearch input {
+    border-radius: 30px;
+    padding: 13px 50px 13px 15px;
+}
+
+.sc-button {
+    border: 2px solid #5142fc;
+    border-radius: 100%;
+}
+
+.list-icon {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu {
+    position: fixed;
+    width: 250px;
+    top: 0;
+    bottom: 0;
+    left: -250px; /* Start off the screen */
+    background: #161423;
+    color: #ffffff;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu.open {
+    transform: translateX(250px); /* Slide in */
+}
+
+.menu-item .item--menu--items {
+    padding: 15px;
+    border-bottom: 1px solid #2f2f3c;
+}
+
+.menu .submenu-item {
+    padding: 15px 25px;
+    border-bottom: 1px solid #2f2f3c;
+}

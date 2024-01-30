@@ -1,0 +1,118 @@
+#footer {
+    background: #030303;
+    padding: 70px 0;
+}
+
+#footer .logo-footer {
+    margin-bottom: 13px;
+}
+
+#footer .widget p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.widget-logo .sub-widget-logo {
+    padding-right: 35px;
+    margin-bottom: 26px;
+}
+
+#footer .title-widget {
+    line-height: 26px;
+}
+
+.footer-section .title-widget {
+    margin-bottom: 24px;
+}
+
+.footer-section ul li {
+    margin-bottom: 14px;
+}
+
+.footer-section ul li a {
+    font-size: 14px;
+    line-height: 22px;
+    position: relative;
+    color: #ffffff;
+}
+
+.footer-section ul li a:hover {
+    background: #5142FC;
+    transition: all 0.3s ease-in-out;
+}
+
+.form--input {
+    position: relative;
+}
+
+.form--input input {
+    border-radius: 10px;
+    background: transparent;
+    width: 100%;
+    padding: 20px 50px 19px 22px;
+    font-size: 14px;
+    border: 1px solid rgba(138, 138, 160, 0.3);
+}
+
+.form--input button {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #5142FC;
+    font-size: 21px;
+    padding: 15px 18px 14px 19px;
+    color: #343444;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+
+.social-media ul li {
+    margin-right: 12px;
+}
+
+.social-media a {
+    background-color: #343444;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    font-size: 21px;
+}
+
+@media screen and (max-width: 991px) {
+    .footer-section {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .widget-logo .sub-widget-logo {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width: 1450px) {
+    #footer .social-media ul {
+        flex-wrap: wrap;
+    }
+
+    .widget-social.style-1 ul li {
+        margin-bottom: 10px;
+    }
+}
