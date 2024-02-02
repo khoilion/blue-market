@@ -1,10 +1,10 @@
-import { Col, Flex, Row } from "antd";
+import {Col, Flex, Row} from "antd";
 import "./Style.css";
-import { IoIosArrowDown, IoIosSearch } from "react-icons/io";
-import { FaWallet, FaThList } from "react-icons/fa";
-import { Input } from "antd";
-import { useState } from "react";
-import { GrClose } from "react-icons/gr";
+import {IoIosArrowDown, IoIosSearch} from "react-icons/io";
+import {FaWallet, FaThList} from "react-icons/fa";
+import {Input} from "antd";
+import {useState} from "react";
+import {GrClose} from "react-icons/gr";
 import {Link} from "react-router-dom";
 
 const Header = () => {
@@ -20,10 +20,9 @@ const Header = () => {
         setMenuOpen(!isMenuOpen);
     };
 
-    const toggleMenuChildren = (index:number) => {
+    const toggleMenuChildren = (index: number) => {
         setIsMenuOpenChildren(index === isMenuOpenChildren ? null : index); // Update isMenuOpenChildren state
     };
-
 
 
     const menuItems = [
@@ -58,7 +57,9 @@ const Header = () => {
             <div id="header" className="position-relative">
                 <Row gutter={16} className="align-items-center">
                     <Col span={12}>
-                        <img className="w-100" src="/public/img/logoPage.png" alt="" />
+                        <Link to={"/"}>
+                            <img className="w-100" src="/public/img/logoPage.png" alt=""/>
+                        </Link>
                     </Col>
                     <Col span={12}>
                         <Flex align="center" justify="space-evenly">
@@ -70,14 +71,14 @@ const Header = () => {
                                 />
                             </div>
                             <Link to={'/connect-wallet'} className="sc-button list-icon">
-                                <FaWallet color="#fff" size={20} />
+                                <FaWallet color="#fff" size={20}/>
                             </Link>
                             <div className="list-icon">
                                 <div onClick={toggleMenu}>
                                     {isMenuOpen ? (
-                                        <GrClose color="#fff" size={20} />
+                                        <GrClose color="#fff" size={20}/>
                                     ) : (
-                                        <FaThList color="#fff" size={20} />
+                                        <FaThList color="#fff" size={20}/>
                                     )}
                                 </div>
                                 <div className={`menu ${isMenuOpen ? "open" : ""}`}>
@@ -91,8 +92,8 @@ const Header = () => {
                                                     >
                                                         <span>{item.name}</span>
                                                         <span className="ms-2">
-                              <IoIosArrowDown />
-                            </span>
+                                                          <IoIosArrowDown/>
+                                                        </span>
                                                     </div>
                                                     {isMenuOpenChildren === index && ( // Conditionally render submenu
                                                         <ul>
@@ -118,7 +119,7 @@ const Header = () => {
                             </div>
                             {inputSearch && (
                                 <div className="position--inputSearch">
-                                    <Input placeholder="Search..." />
+                                    <Input placeholder="Search..."/>
                                 </div>
                             )}
                         </Flex>

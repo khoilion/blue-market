@@ -1,0 +1,209 @@
+.slick-arrow {
+    display: none !important;
+}
+
+
+#slide-banner .content {
+    padding: 70px 0 90px 0;
+    border-bottom: 1px solid rgba(235, 235, 235, 0.2);
+}
+
+#slide-banner .heading {
+    font-size: 50px;
+    line-height: 1.3;
+    font-weight: 700;
+    color: #fff;
+}
+
+#slide-banner .s1 {
+    color: #14141f;
+    background: linear-gradient(-45deg, #e250e5, #4b50e6, #e250e5, #4b50e6);
+    background-size: 100% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: 3px transparent;
+    -webkit-text-fill-color: #14141f;
+    font-size: 40px;
+}
+
+#slide-banner .sub-heading {
+    font-size: 20px;
+    line-height: 30px;
+    color: #ebebeb;
+    text-transform: capitalize;
+    margin-top: 29px;
+    margin-bottom: 44px;
+}
+
+.sc-button-rocket {
+    border: 2px solid #5142fc;
+    color: #fff;
+    background: transparent none repeat scroll 0 0;
+    padding: 16px 35px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.sc-button-rocket span {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slide-up-animation {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+#market-section .exp {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    margin-top: -20px;
+}
+
+#market-section .exp::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+}
+
+#market-section .exp.style2::after {
+    background: linear-gradient(216.56deg, #e250e5 5.32%, #4b50e6 94.32%);
+}
+
+.sc-card-product {
+    padding: 20px;
+    background: #343444;
+    box-shadow: 0px 3px 16px rgba(47, 83, 109, 0.12);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    overflow: hidden;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.sc-card-product .card-media {
+    position: relative;
+    margin-bottom: 21px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.sc-card-product .card-media img {
+    width: 100%;
+}
+
+.sc-card-product .card-media .wishlist-button {
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+    padding: 2px 11px;
+    border-radius: 8px;
+    background-color: #14141f;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.sc-card-product .card-media .featured-countdown {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 23px;
+    text-transform: uppercase;
+    padding: 0;
+    border-radius: 13px;
+    background-color: #343444;
+    height: 36px;
+    width: 151px;
+}
+
+.sc-card-product .card-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.sc-card-product .card-title h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    margin-bottom: 0;
+
+}
+
+.sc-card-product .card-title .tags {
+    width: 49px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    background-color: #5142FC;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.sc-card-product .meta-info {
+    margin-bottom: 4px;
+}
+
+.sc-card-product  .author {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sc-card-product .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.sc-card-product span {
+    color: #8A8AA0;
+    font-size: 13px;
+    line-height: 21px;
+}
+
+.sc-card-product .price {
+    text-align: right;
+}

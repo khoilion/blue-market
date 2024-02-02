@@ -1,0 +1,105 @@
+
+.flat-title-page {
+    background: url("/public/img/img_bg_page_title_dark.jpg");
+    background-size: cover;
+    padding: 100px 0 59px;
+}
+
+.themesflat-container {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 1440px;
+    max-width: 100%;
+}
+
+.page-title-heading .heading {
+    line-height: 58px;
+    color: #fff;
+}
+
+.tf-connect-wallet.tf-section {
+    padding: 80px 0 50px;
+}
+
+.tf-title-heading.ct, .sub-title.ct {
+    text-align: center;
+}
+
+.tf-title-heading {
+    position: relative;
+    line-height: 44px;
+    color: #ffffff;
+}
+
+.sc-box-icon {
+    background: #343444;
+    padding: 43px 20px 39px 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.style-2 .sc-box-icon:nth-child(1) {
+    padding-top: 43px;
+}
+
+.sc-box-icon .img img {
+    margin-bottom: 22px;
+}
+
+.heading-connect {
+    margin-bottom: 12px;
+}
+.content {
+    padding: 0px 5px;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.sub-title {
+    font-size: 18px;
+    font-weight: 400;
+}
+@media only screen and (max-width: 549px) {
+    .themesflat-container {
+        width: 750px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+     .heading {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .themesflat-container {
+        width: 750px;
+    }
+
+    .style-1 {
+        margin-bottom: 50px !important;
+        padding: 0px 15px;
+    }
+
+    .style-2 .sc-box-icon {
+        margin-bottom: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .flat-title-page {
+        border-bottom: 1px solid #343444;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .themesflat-container {
+        width: 1200px;
+        max-width: 100%;
+    }
+}
+

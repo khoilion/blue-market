@@ -1,12 +1,21 @@
 import {Footer, Header} from "../components";
+import Banner from "./viewHome/Banner.tsx";
+import LiveAuctions from "./viewHome/Live-auctions.tsx";
+import './Style.css'
 
 const HomePages = () => {
     return (
-        <div>
-            <Header />
-            <Footer />
+        <div id='Home'>
+            <Header/>
+            <section>
+                <Banner/>
+            </section>
+            <section>
+                <LiveAuctions/>
+            </section>
+            <Footer/>
         </div>
     )
 }
 
-export default HomePages ;
+export default HomePages;
