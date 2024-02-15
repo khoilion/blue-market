@@ -1,45 +1,13 @@
 import {Col, Flex, Row} from "antd";
 import {Link} from "react-router-dom";
 import './Style.css'
+// @ts-ignore
 import Slider from "react-slick";
 import {FaRegHeart} from "react-icons/fa6";
 import {FaHotjar} from "react-icons/fa";
+import { settings } from "../../utils/utils";
 
 const LiveAuctions = () => {
-    const settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        initialSlide: 0,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                    initialSlide: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-        ]
-    };
     const ListAuctions = [
         {
             imageAct: "/public/img/card-item.jpg",
@@ -84,6 +52,7 @@ const LiveAuctions = () => {
             name: "SalvadorDali",
         },
     ]
+
     return (
         <div id='market-section'>
             <div className='container'>
@@ -101,7 +70,7 @@ const LiveAuctions = () => {
                             {ListAuctions.map((items, index) => (
                                 <div key={index}>
 
-                                    <div className='sc-card-product'>
+                                    <div className='sc-card-product mx-1'>
                                         <div className='card-media'>
                                             <a href="#">
                                                 <img src={items.imageAct} alt=""/>
@@ -154,7 +123,6 @@ const LiveAuctions = () => {
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             ))}
                         </Slider>
